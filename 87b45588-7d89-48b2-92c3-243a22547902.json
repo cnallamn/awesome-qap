@@ -1,0 +1,10 @@
+{
+  "name": "DD Navigation",
+  "description": "",
+  "author": "",
+  "library": "mywidgets",
+  "meta": {
+    "type": "navigation"
+  },
+  "properties": {}
+}
