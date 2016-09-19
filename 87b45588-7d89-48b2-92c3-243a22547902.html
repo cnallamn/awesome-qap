@@ -1,0 +1,57 @@
+<style>.dropdown
+{
+    background-color: white;
+	color:Black;
+	padding-top: 2px;
+  	padding-bottom: 2px;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+	--font-style:Italic;
+	--background: url("images/dropdown_arrow.png") no-repeat #fff 319px 2px;
+}
+.dropdown:hover {
+    border-bottom: 1;
+}
+#dd1 option:checked{
+display:none;
+}
+
+.dropdown:hover > lui-select {
+    display: block;
+}
+.td {
+width:33%;
+border:0px solid black
+}</style>
+<div><table><tbody><tr>
+
+  <td class="td">
+	<lui-select id="dd1" class="dropdown" x-model="dd1.value" ng-change="navigation.gotoSheet(dd1.value);">
+		<option value="" selected="" hidden="">Revenue</option>
+		<option value="HLzuEmT">SH1</option>
+		<option value="mZEj">SH2</option>
+		<option value="Td">SH3</option>
+	</lui-select>
+
+  </td>
+  
+  <td class="td">
+	<lui-select id="dd2" class="dropdown" x-model="dd2.value" ng-change="navigation.gotoSheet(dd2.value);">
+		<option value="" selected="" hidden="">Customer</option>
+		<option value="PzJanJh">SH4</option>
+		<option value="jBtRY">SH5</option>
+		<option value="yzrUFr">SH6</option>
+	</lui-select>
+
+  </td>
+  
+  <td class="td">
+	<lui-select id="dd3" class="dropdown" x-model="dd3.value" ng-change="navigation.gotoSheet(dd3.value);">
+		<option value="" selected="selected" hidden="hidden">Trend</option>
+		<option value="ntHQenf">SH7</option>
+		<option value="LcNHVt">SH8</option>
+	</lui-select>
+  </td>
+
+</tr></tbody></table>
+</div>
